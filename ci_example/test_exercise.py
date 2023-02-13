@@ -21,11 +21,6 @@ class TestExercise(unittest.TestCase):
         self.assertEqual(
             [i for i in range(10)], exercise.buildList(), "\nbuildList did not return a list from 0 to 9 (inclusive)"
         )
-        self.assertRegex(
-            inspect.getsource(exercise.buildList),
-            r"for\s+(?:.*?)\s+in\s+range\s*\((?:0\s*,\s*)?\s*10\):",
-            "\nwe didn't detect that buildList has been changed to use a for loop",
-        )
 
     def test_buildList_for_loop(self):
         """ensures that buildList uses a for loop"""
