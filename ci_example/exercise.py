@@ -2,7 +2,7 @@ def return10():
     """
     This function should return 10, but instead it returns 0. Fix it!
     """
-    return 0
+    return 10
 
 
 def buildList():
