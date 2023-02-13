@@ -1,4 +1,4 @@
-from numbers_lib import get_ten
+from numbers_lib.version1 import get_ten
 
 def return10():
     """
