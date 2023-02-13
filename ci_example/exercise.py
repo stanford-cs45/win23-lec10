@@ -23,6 +23,12 @@ def isPalindrome(name):
     """
     Help decompose palindromeNames! Copy the marked lines into this function
     """
+    for i1 in range(len(name) // 2):
+        i2 = len(name) - 1 - i1
+        if name[i1] != name[i2]:
+            return False
+    
+    return True
 
 
 def palindromeNames(nameList):
@@ -34,20 +40,7 @@ def palindromeNames(nameList):
     outputList = []
 
     for name in nameList:
-
-        # Copy starting here–
-        nameIsPalindrome = True
-        for i1 in range(len(name) // 2):
-            i2 = len(name) - 1 - i1
-            if name[i1] != name[i2]:
-                nameIsPalindrome = False
-                break
-
-        # add this here after copying: return nameIsPalindrome
-        # stop copying here
-
-        # change "nameIsPalindrome" to "isPalindrome(name)" (without quotes)
-        if nameIsPalindrome:
+        if isPalindrome(name):
             outputList.append(name)
 
     return outputList
