@@ -1,8 +1,10 @@
+from numbers_lib import get_ten
+
 def return10():
     """
     This function should return 10, but instead it returns 0. Fix it!
     """
-    return 10
+    return get_ten()
 
 
 def buildList():
