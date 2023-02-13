@@ -52,7 +52,7 @@ class TestExercise(unittest.TestCase):
         import exercise
 
         self.assertIn(
-            "isPalindrome(name)",
+            "isPalindrome(name):",
             inspect.getsource(exercise.palindromeNames),
             "\nwe didn't detect that palindromeNames was decomposed",
         )
