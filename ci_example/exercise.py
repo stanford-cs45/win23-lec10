@@ -13,10 +13,8 @@ def buildList():
     """
     the_list = []
 
-    i = 0  # remove this line
-    while i < 10:  # change this line to read: for i in range(10)
+    for i in range(10):
         the_list.append(i)
-        i += 1  # remove this line
 
     return the_list
 
